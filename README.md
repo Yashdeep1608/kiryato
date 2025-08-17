@@ -1,8 +1,8 @@
-# Kriyato – IT Company Landing Page
+# Kriyato – IT Solutions
 
 ## Overview
 
-**Kriyato** is a modern, responsive, SEO-friendly landing page built using HTML, CSS, and JavaScript, based on the open-source [Solid State](https://html5up.net/solid-state) template by HTML5 UP. This website is designed to present our IT services, engage potential clients, and offer a clean experience across all devices.
+**Kriyato** is a modern, responsive, SEO-friendly Business Site built using HTML, CSS, and JavaScript, based on the open-source [Solid State](https://html5up.net/solid-state) template by HTML5 UP. This website is designed to present our IT services, engage potential clients, and offer a clean experience across all devices.
 
 ## Features
 

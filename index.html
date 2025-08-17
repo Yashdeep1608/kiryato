@@ -4,634 +4,1589 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Title & Description -->
     <title>Kriyato — Grow Today</title>
-    <meta name="description" content="We provide high-quality services to help your business grow. Contact us for professional solutions.">
+    <meta
+      name="description"
+      content="We provide high-quality services to help your business grow. Contact us for professional solutions."
+    />
     <!-- Keywords (optional, less impact nowadays) -->
-    <meta name="keywords" content="Kriyato, business growth, professional services, business solutions, digital tools">
+    <meta
+      name="keywords"
+      content="Kriyato, business growth, professional services, business solutions, digital tools"
+    />
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Kriyato — Innovative Solutions for Your Business">
-    <meta property="og:description" content="We provide high-quality services to help your business grow.">
-    <meta property="og:image" content="./images/logo2.png">
-    <meta property="og:url" content="https://www.kriyato.com">
-    <meta property="og:type" content="website">
-
+    <meta
+      property="og:title"
+      content="Kriyato — Innovative Solutions for Your Business"
+    />
+    <meta
+      property="og:description"
+      content="We provide high-quality services to help your business grow."
+    />
+    <meta property="og:image" content="/assets/logos/logo3.png" />
+    <meta property="og:url" content="https://www.kriyato.com" />
+    <meta property="og:type" content="website" />
     <!-- Twitter Card (For Twitter/X) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kriyato — Grow Today">
-    <meta name="twitter:description" content="We provide high-quality services to help your business grow.">
-    <meta name="twitter:image" content="https://www.kriyato.com/assets/logo/logo1.png">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kriyato — Grow Today" />
+    <meta
+      name="twitter:description"
+      content="We provide high-quality services to help your business grow."
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    <meta
+      name="twitter:image"
+      content="https://www.kriyato.com/assets/logo/logo1.png"
     />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/logos/logo3.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <script src="./js/main.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo"><img src="./images/logo2.png" alt="" /></a>
-      <div class="fas fa-bars"></div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#service">services</a></li>
-          <!-- <li><a href="#portfolio">portfolio</a></li> -->
-          <!-- <li><a href="#team">team</a></li> -->
-          <!-- <li><a href="careers.html">career</a></li> -->
-          <li><a href="#contact">contact</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
+  <style>
+    body h1,h2,h3,h4,h5,h6 {
+        font-family: "Space Grotesk", sans-serif;
+    }
+    body span,p,a{
+        font-family: "Inter", sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .drop-shadow-custom {
+      filter: drop-shadow(0px 0px 2px rgb(3, 50, 45));
+    }
+    @keyframes float-slow {
+      0%,
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+      50% {
+        transform: translateY(-40px) translateX(20px);
+      }
+    }
+    @keyframes float-fast {
+      0%,
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+      50% {
+        transform: translateY(-20px) translateX(-30px);
+      }
+    }
+    @keyframes bubble {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+      }
+      50% {
+        transform: translateY(-50px) scale(1.1);
+        opacity: 0.3;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+      }
+    }
 
-    <section id="home" class="home">
-      <div class="container">
-        <h1>Accelerate Your Business Growth</h1>
-        <h2>with Kriyato’s Smart IT Solutions</h2>
-        <h4>
-          From websites to custom software, we empower your digital journey with
-          innovative and scalable technology.
-        </h4>
-      </div>
+    .animate-float-slow {
+      animation: float-slow 12s ease-in-out infinite;
+    }
+    .animate-float-fast {
+      animation: float-fast 8s ease-in-out infinite;
+    }
+    .animate-bubble {
+      animation: bubble 6s ease-in-out infinite;
+    }
+  </style>
+  <body class="bg-gray-50 text-gray-900">
+    <div class="space-y-4">
+      <header
+        class="fixed w-full z-50 bg-gradient-to-br from-teal-900 via-cyan-900 to-teal-800 text-white shadow-lg"
+      >
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-1">
+            <!-- Logo -->
+            <img
+              class="w-36 drop-shadow-custom"
+              src="/assets/logos/logo1.png"
+              alt="Kriyato"
+            />
 
-      <div class="wave wave1"></div>
-      <div class="wave wave2"></div>
-      <div class="wave wave3"></div>
-    </section>
+            <!-- Mobile button -->
+            <div class="sm:hidden">
+              <button
+                id="menuBtn"
+                class="text-white p-2 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-400"
+              >
+                <svg
+                  id="menuOpen"
+                  class="h-6 w-6 block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                <svg
+                  id="menuClose"
+                  class="h-6 w-6 hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
 
-    <section id="about" class="about">
-      <div class="container">
-        <h1 class="heading">About Kriyato</h1>
-        <div class="row">
-          <div class="content">
-            <h3>Innovative Minds. Impactful Solutions.</h3>
-            <p>
-              At Kriyato, we blend creativity with cutting-edge technology to
-              fuel your business growth.<br />
-              From web development to full-scale IT solutions, our passionate
-              team turns ideas into experiences. <b>All. The. Time.</b>
+            <!-- Desktop Menu -->
+            <div class="hidden sm:flex space-x-8 text-lg font-medium">
+              <a
+                href="#"
+                class="hover:text-white transition"
+                data-i18n="nav_home"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="hover:text-white transition"
+                data-i18n="nav_about"
+                >About</a
+              >
+              <a
+                href="#services"
+                class="hover:text-white transition"
+                data-i18n="nav_services"
+                >Services</a
+              >
+              <a
+                href="#pricing"
+                class="hover:text-white transition"
+                data-i18n="nav_pricing"
+                >Pricing</a
+              >
+              <a
+                href="#contact"
+                class="hover:text-white transition"
+                data-i18n="nav_contact"
+                >Contact Us</a
+              >
+              <a
+                href="#faq"
+                class="hover:text-white transition"
+                data-i18n="nav_faq"
+                >FAQ</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobileMenu"
+            class="hidden sm:hidden flex flex-col space-y-4 pb-4"
+          >
+            <a href="#" class="hover:text-white transition" data-i18n="nav_home"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="hover:text-white transition"
+              data-i18n="nav_about"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="hover:text-white transition"
+              data-i18n="nav_services"
+              >Services</a
+            >
+            <a
+              href="#pricing"
+              class="hover:text-white transition"
+              data-i18n="nav_pricing"
+              >Pricing</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-white transition"
+              data-i18n="nav_contact"
+              >Contact Us</a
+            >
+            <a
+              href="#faq"
+              class="hover:text-white transition"
+              data-i18n="nav_faq"
+              >FAQ</a
+            >
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-800 text-white overflow-hidden"
+    >
+      <!-- Background Decorative Illustration -->
+      <svg
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1500px] h-[800px] opacity-20 pointer-events-none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1500 800"
+      >
+        <defs>
+          <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #0d4f4b; stop-opacity: 0.4" />
+            <stop
+              offset="100%"
+              style="stop-color: #14b8a6; stop-opacity: 0.2"
+            />
+          </linearGradient>
+        </defs>
+        <path
+          d="M0,400 C300,100 1200,100 1500,400 C1700,700 1000,900 750,700 C500,500 -200,700 0,400 Z"
+          fill="url(#heroGrad)"
+        />
+        <circle cx="300" cy="200" r="12" fill="#14B8A6" opacity="0.15" />
+        <circle cx="1200" cy="500" r="16" fill="#06B6D4" opacity="0.15" />
+      </svg>
+
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 flex flex-col gap-12 items-center relative z-10"
+      >
+        <!-- Left: Text -->
+        <div
+          class="space-y-6"
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <h1
+            class="text-5xl sm:text-6xl font-extrabold leading-tight text-white"
+            data-i18n="heading"
+          >
+            <!-- translation -->
+          </h1>
+
+          <p
+            class="text-lg sm:text-xl opacity-90 text-teal-100"
+            data-i18n="subheading"
+          >
+            <!-- translation -->
+          </p>
+
+          <!-- Slogan -->
+          <div
+            class="pt-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <h2
+              class="text-3xl font-bold text-teal-400"
+              data-i18n="sloganTitle"
+            >
+              <!-- translation -->
+            </h2>
+            <p class="mt-2 italic text-white" data-i18n="slogan">
+              <!-- translation -->
             </p>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <div class="pt-5 pb-5" style="background-color: #f2f2f2">
-      <div class="container">
-        <div class="row">
-          <div class="section-head col-sm-12" id="service">
-            <h1>Our Services</h1>
-            <p>
-              We help you build powerful digital solutions, grow your business
-              online, and manage operations with ease. Our comprehensive suite
-              of services is designed for startups, SMEs, and growing
-              enterprises.
-            </p>
-          </div>
+          <!-- Buttons -->
+          <div
+            class="flex gap-4 pt-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a
+              href="https://kriyatostageui.onrender.com/"
+              target="_blank"
+              class="px-6 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-white font-semibold shadow-lg transition transform hover:scale-105"
+              data-i18n="startBtn"
+            ></a>
 
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_one"
-                ><i class="fa fa-cogs"></i
-              ></span>
-              <h6>SaaS ERP Solutions</h6>
-              <p>
-                End-to-end business management platform offering Billing,
-                Inventory Management, Customer Profiles, and Operational
-                Dashboards — all in one unified ERP system tailored for your
-                business needs.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_two"
-                ><i class="fa fa-globe"></i
-              ></span>
-              <h6>Auto Website Builder</h6>
-              <p>
-                Create and launch professional websites instantly. Our system
-                auto-generates websites for your business using your product or
-                service data — no coding needed.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_three"
-                ><i class="fa fa-bullhorn"></i
-              ></span>
-              <h6>Marketing & Campaigns</h6>
-              <p>
-                Integrated marketing tools for email, SMS, and WhatsApp
-                campaigns. Track conversions, engage leads, and grow your brand
-                with data-driven marketing strategies.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_one"
-                ><i class="fa fa-laptop"></i
-              ></span>
-              <h6>Website Development</h6>
-              <p>
-                Custom-designed, responsive websites that are fast, secure, and
-                optimized for all devices — from landing pages to complete
-                business portals.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_two"
-                ><i class="fa fa-android"></i
-              ></span>
-              <h6>Mobile App Development</h6>
-              <p>
-                Build scalable mobile apps for Android and iOS using modern
-                frameworks. Native and hybrid apps tailored to your product,
-                service, or internal operations.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_three"
-                ><i class="fa fa-magic"></i
-              ></span>
-              <h6>Digital Marketing</h6>
-              <p>
-                From SEO and SEM to social media ads and content marketing, we
-                help you grow your online visibility and attract the right
-                audience to your business.
-              </p>
-            </div>
+            <a
+              href="#about"
+              class="px-6 py-3 rounded-xl border border-teal-300 hover:bg-teal-800/10 text-white font-semibold transition transform hover:scale-105"
+              data-i18n="learnBtn"
+            ></a>
           </div>
         </div>
-      </div>
-    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- <section class="counters">
-    <div class="container">
-        <div>
-            <i class="far fa-clock fa-4x"></i>
-            <div class="counter" data-target="500">0</div>
-            <h3>Hours of Development</h3>
-        </div>
-        <div>
-            <i class="fas fa-gift fa-4x"></i>
-            <div class="counter" data-target="15">0</div>
-            <h3>Projects Initiated</h3>
-        </div>
-        <div>
-            <i class="fas fa-users fa-4x"></i>
-            <div class="counter" data-target="10">0</div>
-            <h3>Early Adopters</h3>
-        </div>
-        <div>
-            <i class="fas fa-award fa-4x"></i>
-            <div class="counter" data-target="3">0</div>
-            <h3>Milestones Achieved</h3>
-        </div>
-    </div>
-</section> -->
-
-    <div class="pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="section-head-1 col-sm-12" style="text-align: center">
-            <h4 style="margin-top: -5rem" id="portfolio">
-              <span>Our</span> Projects
-            </h4>
-            <p>
-              The objective of Kriyato is to empower businesses with a digital
-              platform<br />
-              that simplifies operations, boosts productivity,<br />
-              and supports growth through technology.
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_four"
-                ><i class="fa fa-cogs"></i
-              ></span>
-              <h6>Kriyato Admin Portal</h6>
-              <p>
-                A powerful, all-in-one ERP solution for small and medium
-                businesses. <br />
-                Includes product/service management, billing, CRM, offers,
-                reporting, and more. <br />
-                Designed for scalability and simplicity.
-              </p>
+        <!-- Right: Collage Style Overlapping Dashboard Images -->
+        <div
+          class="relative max-w-6xl mx-auto flex justify-center items-center px-4"
+        >
+          <div class="relative w-full h-[450px] md:h-[600px]">
+            <!-- Image 1 -->
+            <div
+              class="absolute top-4 md:top-0 -left-6 md:-left-10 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-teal-400 via-teal-500 to-cyan-600 rounded-2xl shadow-2xl overflow-hidden"
+              data-aos="zoom-in-up"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <img
+                src="/assets/images/site1.png"
+                alt="Dashboard Preview"
+                class="w-full h-full object-cover rounded-2xl shadow-lg transform scale-100 transition-transform duration-700 hover:scale-110"
+              />
             </div>
-          </div>
 
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_five"
-                ><i class="fa fa-rocket"></i
-              ></span>
-              <h6>Coming Soon</h6>
-              <p>
-                We’re constantly building new tools and features.<br />
-                Stay tuned for upcoming modules and projects<br />
-                that further enhance the Kriyato platform.
-              </p>
+            <!-- Image 2 -->
+            <div
+              class="absolute top-32 md:top-28 -right-2 md:right-0 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-cyan-600 via-teal-500 to-teal-700 rounded-2xl shadow-2xl overflow-hidden"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1200"
+              data-aos-delay="400"
+            >
+              <img
+                src="/assets/images/site2.png"
+                alt="Supplier Details"
+                class="w-full h-full object-cover rounded-2xl shadow-lg scale-100 transform transition-transform duration-700 hover:scale-110"
+              />
             </div>
-          </div>
 
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
-              <span class="icon feature_box_col_six"
-                ><i class="fa fa-handshake"></i
-              ></span>
-              <h6>Open for Collaboration</h6>
-              <p>
-                Want to build something together or
-                <br />join?<br />
-                We’re open to client projects, partnerships,<br />
-                and product ideas in the tech and SaaS space.
-              </p>
+            <!-- Image 3 -->
+            <div
+              class="absolute bottom-28 md:bottom-20 -left-6 md:-left-10 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-teal-600 via-teal-500 to-cyan-500 rounded-2xl shadow-2xl overflow-hidden"
+              data-aos="flip-up"
+              data-aos-duration="1200"
+              data-aos-delay="600"
+            >
+              <img
+                src="/assets/images/site3.png"
+                alt="Loan Details"
+                class="w-full h-full object-cover rounded-2xl shadow-lg scale-100 transform transition-transform duration-700 hover:scale-110"
+              />
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="communicate">
-      <h3>Ready to take your business online with Kriyato?</h3>
-      <p>Let’s build something great together.</p>
-      <a href="#contact"><button class="btn">Contact Now</button></a>
-    </div>
-
-    <!-- <div class="clients mt-100">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Clients</h2>
-            <p>
-                We don't just build softwares, we build your business.
-            </p>
-        </div>
-        <div class="owl-carousel clients-carousel">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-            <img src="./images/logo2.png" alt="Client Logo">
-        </div>
-    </div>
-</div> -->
-
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- <section class="team" style="margin-top: 7rem;">
-  <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>
-  <p></p>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-andrea-piacquadio-845434.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Schott Watkins</h3>
-              <span>Web Developer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-vinicius-wiesehofer-1130624.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Nicole Bell</h3>
-              <span>Mobile Developer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-hussein-altameemi-2776353.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>John Doe</h3>
-              <span>Graphic Designer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-andrea-piacquadio-745136.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Rose Matthews</h3>
-              <span>Web Designer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section> -->
-
-    <section id="contact" class="contact">
-      <h1 class="heading">get in touch</h1>
-    </section>
-    <div class="contact-in">
-      <!-- <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div> -->
-      <div class="contact-form">
-        <form action="https://formsubmit.co/yashyosaini00@gmail.com" method="POST">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            class="contact-form-txt"
-            required
-          />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{10}"
-            required
-            placeholder="Contact number"
-            maxlength="10"
-            class="contact-form-phone"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            class="contact-form-email"
-            required
-          />
-          <textarea
-            placeholder="Your Message"
-            name="message"
-            class="contact-form-txtarea"
-            required
-          ></textarea>
-          <input
-            type="submit"
-            value="Submit"
-            name="submit"
-            class="contact-form-btn"
-          />
-        </form>
-      </div>
-    </div>
-
-    <section class="faq">
-      <h1 class="heading" style="margin-top: -2rem; color: #17a2b8" id="faq">
-        FAQ
-      </h1>
-      <div class="row">
-        <div class="accordion-container">
-          <div class="accordion">
-            <div class="accordion-header">
-              <span>+</span>
-              <h3>What services do you currently offer?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>
-                We currently offer website and portal development, basic
-                software solutions, and collaboration on startup ideas. As we
-                grow, we’ll expand our service offerings based on client needs.
-              </p>
-            </div>
-          </div>
-
-          <div class="accordion">
-            <div class="accordion-header">
-              <span>+</span>
-              <h3>Is your platform live and fully functional?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>
-                We’re in our early phase and actively building. Some features
-                may show “Coming Soon” as we roll them out step by step. Stay
-                tuned — we’re evolving fast!
-              </p>
-            </div>
-          </div>
-
-          <div class="accordion">
-            <div class="accordion-header">
-              <span>+</span>
-              <h3>Can I collaborate or pitch an idea?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>
-                Yes! We love collaborating with startups, freelancers, and
-                businesses. If you have an idea or project and need a tech
-                partner, reach out through our contact form or drop us a
-                message.
-              </p>
-            </div>
-          </div>
-
-          <div class="accordion">
-            <div class="accordion-header">
-              <span>+</span>
-              <h3>Do I need technical knowledge to work with you?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>
-                Not at all. We simplify the process and explain things clearly.
-                Whether you're non-technical or experienced, we’ll make the
-                process comfortable and transparent for you.
-              </p>
-            </div>
-          </div>
-
-          <div class="accordion">
-            <div class="accordion-header">
-              <span>+</span>
-              <h3>What’s the cost of working with you?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>
-                Since we’re starting out, we offer flexible pricing and try to
-                work within your budget. Get in touch to discuss your needs —
-                we’ll be happy to provide a fair quote based on your goals.
-              </p>
+            <!-- Image 4 -->
+            <div
+              class="absolute bottom-2 md:bottom-0 -right-2 md:-right-10 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-cyan-500 via-teal-500 to-teal-800 rounded-2xl shadow-2xl overflow-hidden"
+              data-aos="zoom-out-up"
+              data-aos-duration="1200"
+              data-aos-delay="800"
+            >
+              <img
+                src="/assets/images/site4.png"
+                alt="Product Details"
+                class="w-full h-full object-cover rounded-2xl shadow-lg scale-100 transform transition-transform duration-700 hover:scale-110"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>About Us</h4>
-              <ul>
-                <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i class="ion-ios-arrow-forward"></i>
-                  <a href="#about">About us</a>
-                </li>
-                <li>
-                  <i class="ion-ios-arrow-forward"></i>
-                  <a href="#service">Our services</a>
-                </li>
-              </ul>
-            </div>
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+    <!-- Decorative Background -->
+      <svg
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] opacity-10 pointer-events-none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 600"
+      >
+        <defs>
+          <linearGradient id="faqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #14b8a6; stop-opacity: 0.2" />
+            <stop
+              offset="100%"
+              style="stop-color: #06b6d4; stop-opacity: 0.1"
+            />
+          </linearGradient>
+        </defs>
+        <path
+          d="M200,300 C400,100 800,100 1000,300 C1200,500 800,600 600,500 C400,400 0,500 200,300 Z"
+          fill="url(#faqGrad)"
+        />
+      </svg>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="ion-ios-arrow-forward"></i>
-                  <a href="careers.html">Career</a>
-                </li>
-                <li>
-                  <i class="ion-ios-arrow-forward"></i>
-                  <a href="#contact">Contact</a>
-                </li>
-                <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a>
-                </li>
-              </ul>
+      <!-- Floating Decorative Elements -->
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- Floating blob 1 -->
+        <div
+          class="absolute w-72 h-72 bg-teal-400 opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-float-slow"
+          style="top: 10%; left: 15%"
+        ></div>
+
+        <!-- Floating blob 2 -->
+        <div
+          class="absolute w-60 h-60 bg-cyan-400 opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-float-fast"
+          style="bottom: 15%; right: 10%"
+        ></div>
+
+        <!-- Floating bubble -->
+        <div
+          class="absolute w-10 h-10 bg-teal-300 opacity-40 rounded-full animate-bubble"
+          style="bottom: 5%; left: 20%"
+        ></div>
+        <div
+          class="absolute w-6 h-6 bg-cyan-300 opacity-40 rounded-full animate-bubble delay-300"
+          style="bottom: 10%; right: 25%"
+        ></div>
+      </div>
+      <div class="container mx-auto px-6 lg:px-20 relative z-10">
+        <!-- Heading -->
+        <!-- Section Heading -->
+        <div class="text-center mb-20" data-aos="fade-up">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4"
+            data-i18n="about_heading"
+          >
+            About Kriyato
+          </h1>
+          <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
+          <p
+            class="mt-2 text-lg opacity-80 max-w-2xl mx-auto"
+            data-i18n="about_subheading"
+          ></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Left: About Content -->
+          <div class="space-y-6" data-aos="fade-right">
+            <h3
+              class="text-2xl md:text-3xl font-bold text-teal-600"
+              data-i18n="about_subtitle"
+            >
+              Empowering Small Businesses, Driving Digital Growth
+            </h3>
+            <p
+              class="text-lg opacity-80 leading-relaxed"
+              data-i18n="about_description"
+            ></p>
+            <!-- Optional CTA -->
+            <a
+              href="https://kriyatostageui.onrender.com/"
+              target="_blank"
+              class="inline-block mt-4 px-6 py-3 bg-teal-500 hover:bg-teal-400 text-white rounded-xl font-semibold shadow-lg transition"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Get Started
+            </a>
+          </div>
+
+          <!-- Right: Vision, Mission, Values -->
+          <div class="grid gap-6">
+            <div
+              class="flex items-start p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <img
+                src="/assets/images/vision.png"
+                alt="Vision Icon"
+                class="w-12 h-12 mr-4"
+              />
+              <div>
+                <h4
+                  class="text-xl font-semibold text-teal-600"
+                  data-i18n="vision_title"
+                >
+                  Our Vision
+                </h4>
+                <p class="opacity-80 mt-2" data-i18n="vision_text">
+                  To create a sustainable digital ecosystem where small
+                  businesses thrive, connect, and compete fairly in a
+                  fast-changing marketplace.
+                </p>
+              </div>
             </div>
 
             <div
-              class="col-lg-3 col-md-6 footer-contact"
-              style="font-size: 1.5rem"
+              class="flex items-start p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
+              data-aos="fade-left"
+              data-aos-delay="200"
             >
-              <h4>Contact Us</h4>
-              <p>
-                419, Hasanpura A<br />
-                Jaipur, Rajasthan<br />
-                India <br />
-                <strong>Phone:</strong> +91-9602937578<br />
-                <strong>Email:</strong> yashdeeps0509@gmail.com<br />
-              </p>
+              <img
+                src="/assets/images/mission.png"
+                alt="Mission Icon"
+                class="w-12 h-12 mr-4"
+              />
+              <div>
+                <h4
+                  class="text-xl font-semibold text-teal-600"
+                  data-i18n="mission_title"
+                >
+                  Our Mission
+                </h4>
+                <p class="opacity-80 mt-2" data-i18n="mission_text">
+                  To provide affordable, accessible, and scalable digital
+                  solutions that simplify business management, enhance
+                  visibility, and enable growth for every entrepreneur.
+                </p>
+              </div>
+            </div>
 
-              <div class="social-links">
-                <a href="https://www.facebook.com/"
-                  ><i class="ion-logo-facebook"></i
-                ></a>
-                <a href="https://twitter.com/login?lang=en"
-                  ><i class="ion-logo-twitter"></i
-                ></a>
-                <a href="https://www.linkedin.com/"
-                  ><i class="ion-logo-linkedin"></i
-                ></a>
-                <a href="https://www.instagram.com/"
-                  ><i class="ion-logo-instagram"></i
-                ></a>
-                <a
-                  href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-                  ><i class="ion-logo-googleplus"></i
-                ></a>
+            <div
+              class="flex items-start p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <img
+                src="/assets/images/values.png"
+                alt="Values Icon"
+                class="w-12 h-12 mr-4"
+              />
+              <div>
+                <h4
+                  class="text-xl font-semibold text-teal-600"
+                  data-i18n="values_title"
+                >
+                  Our Values
+                </h4>
+                <ul class="list-disc list-inside opacity-80 space-y-2 mt-2">
+                  <li data-i18n="values_1">Innovation with purpose</li>
+                  <li data-i18n="values_2">Transparency and trust</li>
+                  <li data-i18n="values_3">Customer-first approach</li>
+                  <li data-i18n="values_4">Empowering communities</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
-        <div class="row align-items-center justify-content-center text-center text-md-start">
-        <div class="col-12 col-md-6 text-white" style="font-size: 1.1rem;">
-            &copy; <span id="currentYear"></span> Kriyato. All rights reserved.
+        <!-- Enhanced Decorative Background Illustration -->
+        <svg
+          class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] opacity-20 pointer-events-none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 600"
+        >
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop
+                offset="0%"
+                style="stop-color: #14b8a6; stop-opacity: 0.6"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: #06b6d4; stop-opacity: 0.3"
+              />
+            </linearGradient>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop
+                offset="0%"
+                style="stop-color: #0ea5e9; stop-opacity: 0.5"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: #14b8a6; stop-opacity: 0.25"
+              />
+            </linearGradient>
+          </defs>
+
+          <!-- Blobs -->
+          <path
+            d="M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z"
+            fill="url(#grad1)"
+          >
+            <animate
+              attributeName="d"
+              dur="20s"
+              repeatCount="indefinite"
+              values="
+        M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z;
+        M260,130 C410,-10 860,10 960,130 C1060,250 1160,410 960,510 C760,610 410,510 260,410 C160,310 110,210 260,130 Z;
+        M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z
+      "
+            />
+          </path>
+          <path
+            d="M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z"
+            fill="url(#grad2)"
+          >
+            <animate
+              attributeName="d"
+              dur="25s"
+              repeatCount="indefinite"
+              values="
+        M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z;
+        M90,410 C210,360 510,560 660,410 C810,260 1060,310 1160,460 C1110,560 710,510 510,460 C310,410 60,460 90,410 Z;
+        M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z
+      "
+            />
+          </path>
+
+          <!-- Floating nodes / circles -->
+          <circle cx="200" cy="150" r="8" fill="#14B8A6" opacity="0.15">
+            <animate
+              attributeName="cy"
+              dur="6s"
+              values="150;160;150"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="500" cy="300" r="12" fill="#06B6D4" opacity="0.15">
+            <animate
+              attributeName="cy"
+              dur="8s"
+              values="300;310;300"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="800" cy="200" r="10" fill="#14B8A6" opacity="0.1">
+            <animate
+              attributeName="cy"
+              dur="10s"
+              values="200;190;200"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="1000" cy="400" r="6" fill="#06B6D4" opacity="0.15">
+            <animate
+              attributeName="cy"
+              dur="7s"
+              values="400;390;400"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </svg>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="relative py-20 bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-800 overflow-hidden"
+    >
+      <!-- Animated Radial Highlights -->
+      <div
+        class="absolute -top-20 -left-20 w-96 h-96 bg-cyan-400/30 rounded-full blur-3xl animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-80 h-80 bg-teal-500/30 rounded-full blur-3xl animate-pulse-slow"
+      ></div>
+      <!-- Background Illustration -->
+      <svg
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1400px] h-[700px] opacity-10 pointer-events-none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1400 700"
+      >
+        <defs>
+          <linearGradient id="gradServices" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #0f766e; stop-opacity: 0.2" />
+            <stop
+              offset="100%"
+              style="stop-color: #06b6d4; stop-opacity: 0.05"
+            />
+          </linearGradient>
+        </defs>
+        <path
+          d="M200,400 C400,200 1000,200 1200,400 C1400,600 800,650 600,550 C400,450 0,600 200,400 Z"
+          fill="url(#gradServices)"
+        />
+      </svg>
+
+      <div class="container mx-auto px-6 lg:px-20 relative z-10">
+        <!-- Section Heading -->
+        <div class="text-center mb-20" data-aos="fade-up">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-white mb-4"
+            data-i18n="services_heading"
+          >
+            Our Services
+          </h1>
+          <div class="w-24 h-1 bg-white mx-auto rounded-full mb-4"></div>
+          <p
+            class="mt-2 text-white text-lg opacity-80 max-w-2xl mx-auto"
+            data-i18n="services_subheading"
+          >
+            We provide powerful digital solutions to help small and micro
+            businesses grow online and manage operations efficiently.
+          </p>
         </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Service Card Template -->
+          <div
+            class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- Icon Blob Background -->
+            <div
+              class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
+            ></div>
+
+            <!-- PNG Icon -->
+            <div class="w-16 h-16 mb-4">
+              <img
+                src="/assets/images/service-erp.png"
+                alt="ERP Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <!-- Service Title -->
+            <h3
+              class="text-xl text-teal-600 font-semibold mb-2"
+              data-i18n="service_erp"
+            >
+              SaaS ERP Solutions
+            </h3>
+
+            <!-- Service Description -->
+            <p class="opacity-80 text-sm" data-i18n="service_erp_desc">
+              End-to-end business management platform offering Billing,
+              Inventory, Customer Profiles, and Dashboards—all in one unified
+              ERP system.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
+            ></div>
+            <div class="w-16 h-16 mb-4">
+              <img
+                src="/assets/images/service-website.png"
+                alt="Website Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="text-xl text-teal-600 font-semibold mb-2"
+              data-i18n="service_website"
+            >
+              Auto Website Builder
+            </h3>
+            <p class="opacity-80 text-sm" data-i18n="service_website_desc">
+              Instantly create professional websites using your product/service
+              data. No coding required.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
+            ></div>
+            <div class="w-16 h-16 mb-4">
+              <img
+                src="/assets/images/service-marketing.png"
+                alt="Marketing Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="text-xl text-teal-600 font-semibold mb-2"
+              data-i18n="service_marketing"
+            >
+              Marketing & Campaigns
+            </h3>
+            <p class="opacity-80 text-sm" data-i18n="service_marketing_desc">
+              Integrated marketing tools for email, SMS, and WhatsApp campaigns.
+              Track conversions and grow your brand.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
+            ></div>
+            <div class="w-16 h-16 mb-4">
+              <img
+                src="/assets/images/service-webdev.png"
+                alt="Web Dev Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="text-xl text-teal-600 font-semibold mb-2"
+              data-i18n="service_webdev"
+            >
+              Website Development
+            </h3>
+            <p class="opacity-80 text-sm" data-i18n="service_webdev_desc">
+              Custom, responsive websites optimized for speed, security, and all
+              devices.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
+            ></div>
+            <div class="w-16 h-16 mb-4">
+              <img
+                src="/assets/images/service-appdev.png"
+                alt="Mobile Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="text-xl text-teal-600 font-semibold mb-2"
+              data-i18n="service_mobile"
+            >
+              Mobile App Development
+            </h3>
+            <p class="opacity-80 text-sm" data-i18n="service_mobile_desc">
+              Build scalable mobile apps for Android and iOS with native and
+              hybrid frameworks.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
+            ></div>
+            <div class="w-16 h-16 mb-4">
+              <img
+                src="/assets/images/service-crm.png"
+                alt="CRM Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="text-xl text-teal-600 font-semibold mb-2"
+              data-i18n="service_crm"
+            >
+              CRM Solutions
+            </h3>
+            <p class="opacity-80 text-sm" data-i18n="service_crm_desc">
+              Manage customer relationships effectively with lead tracking,
+              follow-ups, and automated workflows to boost sales and retention.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section
+      id="pricing"
+      class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <!-- Decorative Background -->
+      <svg
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] opacity-10 pointer-events-none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 600"
+      >
+        <defs>
+          <linearGradient id="faqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #14b8a6; stop-opacity: 0.2" />
+            <stop
+              offset="100%"
+              style="stop-color: #06b6d4; stop-opacity: 0.1"
+            />
+          </linearGradient>
+        </defs>
+        <path
+          d="M200,300 C400,100 800,100 1000,300 C1200,500 800,600 600,500 C400,400 0,500 200,300 Z"
+          fill="url(#faqGrad)"
+        />
+      </svg>
+
+      <!-- Floating Decorative Elements -->
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- Floating blob 1 -->
+        <div
+          class="absolute w-72 h-72 bg-teal-400 opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-float-slow"
+          style="top: 10%; left: 15%"
+        ></div>
+
+        <!-- Floating blob 2 -->
+        <div
+          class="absolute w-60 h-60 bg-cyan-400 opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-float-fast"
+          style="bottom: 15%; right: 10%"
+        ></div>
+
+        <!-- Floating bubble -->
+        <div
+          class="absolute w-10 h-10 bg-teal-300 opacity-40 rounded-full animate-bubble"
+          style="bottom: 5%; left: 20%"
+        ></div>
+        <div
+          class="absolute w-6 h-6 bg-cyan-300 opacity-40 rounded-full animate-bubble delay-300"
+          style="bottom: 10%; right: 25%"
+        ></div>
       </div>
 
-      
-    </div>
+      <div class="container mx-auto px-6 lg:px-20 relative">
+        <!-- Section Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4"
+            data-i18n="pricing_heading"
+          >
+            Our Pricing Plans
+          </h1>
+          <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
+          <p
+            class="mt-2 text-lg opacity-80 max-w-2xl mx-auto"
+            data-i18n="pricing_subheading"
+          >
+            Affordable plans for small businesses and startups. Choose a plan
+            that fits your growth.
+          </p>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Free Plan -->
+          <div
+            class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex justify-between items-center mb-4">
+              <h3
+                class="text-xl font-semibold text-teal-600"
+                data-i18n="plan_free"
+              >
+                Free
+              </h3>
+              <span
+                class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
+                >30 Days</span
+              >
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-4">₹0</p>
+            <div
+              class="text-sm opacity-80 mb-6"
+              data-i18n="plan_free_desc"
+            ></div>
+
+            <a
+              href="#"
+              class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
+            >
+              Start Free
+            </a>
+          </div>
+
+          <!-- Basic Plan -->
+          <div
+            class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex justify-between items-center mb-4">
+              <h3
+                class="text-xl font-semibold text-teal-700"
+                data-i18n="plan_basic"
+              >
+                Basic
+              </h3>
+              <span
+                class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
+                >30 Days</span
+              >
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-2">
+              ₹6,999
+              <span class="line-through text-gray-400 text-lg font-medium ml-2"
+                >₹9,999</span
+              >
+            </p>
+            <p
+              class="text-sm text-green-600 font-semibold mb-4"
+              data-i18n="plan_basic_saving"
+            ></p>
+            <div
+              class="text-sm opacity-80 mb-6"
+              data-i18n="plan_basic_desc"
+            ></div>
+            <a
+              href="#"
+              class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
+            >
+              Get Started
+            </a>
+          </div>
+
+          <!-- Premium Plan -->
+          <div
+            class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex justify-between items-center mb-4">
+              <h3
+                class="text-xl font-semibold text-teal-700"
+                data-i18n="plan_premium"
+              >
+                Premium
+              </h3>
+              <span
+                class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
+                >365 Days</span
+              >
+            </div>
+            <p class="text-3xl font-bold text-gray-900 mb-2">
+              ₹14,999
+              <span class="line-through text-gray-400 text-lg font-medium ml-2"
+                >₹19,999</span
+              >
+            </p>
+            <p
+              class="text-sm text-green-600 font-semibold mb-4"
+              data-i18n="plan_premium_saving"
+            ></p>
+
+            <div
+              class="text-sm opacity-80 mb-6"
+              data-i18n="plan_premium_desc"
+            ></div>
+            <a
+              href="#"
+              class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
+            >
+              Go Premium
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section
+      id="contact"
+      class="relative py-20 bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-800 overflow-hidden"
+    >
+      <!-- Animated Radial Highlights -->
+      <div
+        class="absolute -top-20 -left-20 w-96 h-96 bg-cyan-400/30 rounded-full blur-3xl animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-80 h-80 bg-teal-500/30 rounded-full blur-3xl animate-pulse-slow"
+      ></div>
+
+      <!-- Decorative Wave -->
+      <svg
+        class="absolute top-0 left-0 w-full h-32 text-white/10"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        fill="currentColor"
+      >
+        <path
+          d="M0,64L48,96C96,128,192,192,288,202.7C384,213,480,171,576,144C672,117,768,107,864,138.7C960,171,1056,245,1152,256C1248,267,1344,213,1392,186.7L1440,160V320H0Z"
+        ></path>
+      </svg>
+
+      <div class="container mx-auto px-6 lg:px-20 relative z-10">
+        <!-- Section Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-white mb-4"
+            data-i18n="contact_heading"
+          >
+            Contact Us
+          </h1>
+          <div class="w-24 h-1 bg-white mx-auto rounded-full mb-4"></div>
+          <p
+            class="mt-2 text-lg text-white/90 max-w-2xl mx-auto"
+            data-i18n="contact_subheading"
+          >
+            Have questions or need support? Send us a message and we’ll get back
+            to you.
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form
+          class="max-w-3xl mx-auto bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-8 grid gap-6 border border-white/30"
+          data-aos="fade-up"
+          action="https://formsubmit.co/kiryato.it.solutions@gmail.com"
+          method="POST"
+        >
+          <div>
+            <label
+              class="block mb-2 font-semibold text-gray-700"
+              data-i18n="contact_name"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="contactName"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </div>
+
+          <div>
+            <label
+              class="block mb-2 font-semibold text-gray-700"
+              data-i18n="contact_email"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="contactEmail"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </div>
+
+          <div>
+            <label
+              class="block mb-2 font-semibold text-gray-700"
+              data-i18n="contact_phone"
+              >Phone</label
+            >
+            <input
+              type="phone"
+              id="contactPhone"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </div>
+
+          <div>
+            <label
+              class="block mb-2 font-semibold text-gray-700"
+              data-i18n="contact_message"
+              >Message</label
+            >
+            <textarea
+              id="contactMessage"
+              required
+              rows="5"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition shadow-lg"
+          >
+            Send Message
+          </button>
+
+          <p
+            id="contactFeedback"
+            class="text-sm text-green-600 mt-2 hidden"
+            data-i18n="contact_success"
+          >
+            Your message has been sent successfully!
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section
+      id="faq"
+      class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <!-- Decorative Background -->
+      <svg
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] opacity-10 pointer-events-none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 600"
+      >
+        <defs>
+          <linearGradient id="faqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #14b8a6; stop-opacity: 0.2" />
+            <stop
+              offset="100%"
+              style="stop-color: #06b6d4; stop-opacity: 0.1"
+            />
+          </linearGradient>
+        </defs>
+        <path
+          d="M200,300 C400,100 800,100 1000,300 C1200,500 800,600 600,500 C400,400 0,500 200,300 Z"
+          fill="url(#faqGrad)"
+        />
+      </svg>
+
+      <!-- Floating Decorative Elements -->
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- Floating blob 1 -->
+        <div
+          class="absolute w-72 h-72 bg-teal-400 opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-float-slow"
+          style="top: 10%; left: 15%"
+        ></div>
+
+        <!-- Floating blob 2 -->
+        <div
+          class="absolute w-60 h-60 bg-cyan-400 opacity-20 rounded-full mix-blend-multiply filter blur-3xl animate-float-fast"
+          style="bottom: 15%; right: 10%"
+        ></div>
+
+        <!-- Floating bubble -->
+        <div
+          class="absolute w-10 h-10 bg-teal-300 opacity-40 rounded-full animate-bubble"
+          style="bottom: 5%; left: 20%"
+        ></div>
+        <div
+          class="absolute w-6 h-6 bg-cyan-300 opacity-40 rounded-full animate-bubble delay-300"
+          style="bottom: 10%; right: 25%"
+        ></div>
+      </div>
+
+      <!-- FAQ Content -->
+      <div class="container mx-auto px-6 lg:px-20 relative">
+        <!-- Section Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4"
+            data-i18n="faq_heading"
+          >
+            Frequently Asked Questions
+          </h1>
+          <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
+          <p
+            class="mt-2 text-lg opacity-80 max-w-2xl mx-auto"
+            data-i18n="faq_subheading"
+          >
+            Here are answers to some common questions about Kriyato and our
+            services.
+          </p>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="space-y-4 max-w-3xl mx-auto">
+          <!-- FAQ Item 1 -->
+          <div
+            class="border border-gray-200 rounded-xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <button
+              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
+            >
+              <span
+                class="font-semibold text-teal-700"
+                data-i18n="faq_1_question"
+                >What is Kriyato?</span
+              >
+              <svg
+                class="w-5 h-5 transition-transform duration-300 transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="px-6 py-4 bg-gray-50 hidden faq-content"
+              data-i18n="faq_1_answer"
+            >
+              Kriyato is an all-in-one SaaS platform that helps small and micro
+              businesses manage operations, reach customers, and grow digitally.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="border border-gray-200 rounded-xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <button
+              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
+            >
+              <span
+                class="font-semibold text-teal-700"
+                data-i18n="faq_2_question"
+                >Can I try Kriyato for free?</span
+              >
+              <svg
+                class="w-5 h-5 transition-transform duration-300 transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="px-6 py-4 bg-gray-50 hidden faq-content"
+              data-i18n="faq_2_answer"
+            >
+              Yes! We offer a free 30-day plan to explore basic features and see
+              how Kriyato works for your business.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="border border-gray-200 rounded-xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <button
+              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
+            >
+              <span
+                class="font-semibold text-teal-700"
+                data-i18n="faq_3_question"
+                >Which services does Kriyato provide?</span
+              >
+              <svg
+                class="w-5 h-5 transition-transform duration-300 transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="px-6 py-4 bg-gray-50 hidden faq-content"
+              data-i18n="faq_3_answer"
+            >
+              We provide ERP solutions, CRM, website and mobile app development,
+              marketing tools, and more to help your business grow online.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="border border-gray-200 rounded-xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <button
+              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
+            >
+              <span
+                class="font-semibold text-teal-700"
+                data-i18n="faq_4_question"
+                >How do I contact support?</span
+              >
+              <svg
+                class="w-5 h-5 transition-transform duration-300 transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="px-6 py-4 bg-gray-50 hidden faq-content"
+              data-i18n="faq_4_answer"
+            >
+              You can contact us via our Contact Us page or email us directly at
+              hello@kriyato.com.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="border border-gray-200 rounded-xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <button
+              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
+            >
+              <span
+                class="font-semibold text-teal-700"
+                data-i18n="faq_5_question"
+                >Can I upgrade my plan later?</span
+              >
+              <svg
+                class="w-5 h-5 transition-transform duration-300 transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="px-6 py-4 bg-gray-50 hidden faq-content"
+              data-i18n="faq_5_answer"
+            >
+              Absolutely! You can upgrade from Free to Basic or Premium anytime
+              to access more features.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-br from-teal-900 via-cyan-900 to-teal-900 text-white relative pt-4">
+      <div class="container mx-auto px-6 lg:px-20">
+        <!-- Footer Top: Contact & Social -->
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+          <!-- Contact Info -->
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3
+              class="text-xl font-bold mb-4"
+              data-i18n="footer_contact_heading"
+            >
+              Contact Us
+            </h3>
+            <p class="mb-2" data-i18n="footer_phone">📞 +91 98765 43210</p>
+            <p class="mb-2" data-i18n="footer_email">✉ hello@kriyato.com</p>
+          </div>
+
+          <!-- Quick Links (Optional) -->
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-xl font-bold mb-4" data-i18n="footer_quick_links">
+              Quick Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-teal-300 transition"
+                  data-i18n="footer_about"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="hover:text-teal-300 transition"
+                  data-i18n="footer_services"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  class="hover:text-teal-300 transition"
+                  data-i18n="footer_pricing"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="hover:text-teal-300 transition"
+                  data-i18n="footer_faq"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social & Language -->
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-xl font-bold mb-4" data-i18n="footer_follow_us">
+              Follow Us
+            </h3>
+            <div class="flex gap-4 mb-6">
+              <a
+                href="https://wa.me/919352028422"
+                target="_blank"
+                class="hover:text-green-400 transition text-2xl"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="mailto:hello@kriyato.com"
+                class="hover:text-yellow-400 transition text-2xl"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://instagram.com/kriyatoitsolutions"
+                target="_blank"
+                class="hover:text-pink-400 transition text-2xl"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://linkedin.com/company/kriyato"
+                target="_blank"
+                class="hover:text-blue-400 transition text-2xl"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div
+          class="mt-4 border-t border-teal-700 p-4 text-center text-sm opacity-80"
+        >
+          <p>
+            &copy; <span id="currentYear"></span> Kriyato. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Floating Language Toggle -->
+    <button
+      id="langToggle"
+      class="fixed bottom-6 right-6 px-4 py-2 rounded-full shadow-lg bg-teal-500 text-white font-semibold hover:bg-teal-400 transition z-50"
+    >
+      हिन्दी
+    </button>
+
+    <!-- Include AOS library for animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+      AOS.init({ duration: 1000, once: false });
+      // Force refresh so elements already in viewport animate
+      AOS.refresh();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
