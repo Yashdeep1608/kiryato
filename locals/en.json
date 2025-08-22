@@ -46,13 +46,10 @@
   "pricing_heading": "Kriyato Business Portal",
   "pricing_subheading": "Affordable plans for small businesses and startups. Choose a plan that fits your growth.",
   "plan_free": "Free",
-  "plan_free_desc": "<ul><li>✅ Access for 30 days</li><li>🚀 Limited features to explore the platform</li><li>💡 Perfect for testing and learning</li></ul>",
-  "plan_basic": "Basic",
-  "plan_basic_desc": "<ul><li>💼 Standard features for growing businesses</li><li>📅 Valid for 365 days</li><li>⚡ Save ₹4,000 instantly</li></ul>",
-  "plan_premium": "Premium",
-  "plan_premium_desc": "<ul><li>🏆 Full-featured platform with priority support</li><li>📅 Valid for 365 days</li><li>✨ Save ₹5,000 instantly</li></ul>",
-  "plan_basic_saving": "Save ₹4,000 instantly",
-  "plan_premium_saving": "Save ₹5,000 instantly",
+  "plan_free_desc": "<p class=\"text-gray-600 mb-4\">Try the core experience</p>\n<ul class=\"space-y-2 text-sm text-gray-700\">\n  <li>✅ Access for 30 days</li>\n  <li>✅ Limited features to explore the platform</li>\n  <li>✅ Perfect for testing and learning</li>\n  <li>✅ Core modules: Dashboard, Inventory, Category, Product, Orders, Contacts</li>\n  <li>✅ Learning Center: Updates, Guides, Tutorials</li>\n  <li>❌ No advanced CRM (Groups, Tags, Custom Fields)</li>\n  <li>❌ No stock reports, loans, or team management</li>\n</ul>",
+  "plan_pro_desc": "<p class=\"text-gray-600 mb-4\">Everything you need to run & grow</p>\n<ul class=\"space-y-2 text-sm text-gray-700\">\n  <li>✅ Full access — all features & modules</li>\n  <li>✅ Dashboard analytics, Inventory, Category, Product (custom fields, batches, stock logs), Service</li>\n  <li>✅ Orders & Billing: Order Management, Orders, Create Order, Invoices</li>\n  <li>✅ CRM+: Contacts with Groups, Tags & Custom Fields</li>\n  <li>✅ Finance: Customer Ledger, Expenses, Loans, Stock Report</li>\n  <li>✅ Admin: Manage, Team, Suppliers</li>\n  <li>✅ Learning Center: Updates, Guides, Tutorials</li>\n</ul>",
+  "plan_pro": "Pro",
+  "plan_pro_saving": "Save ₹2,000 instantly",
   "contact_heading": "Contact Us",
   "contact_subheading": "Have questions or need support? Send us a message and we’ll get back to you.",
   "contact_name": "Name",
@@ -71,5 +68,9 @@
   "faq_4_question": "How do I contact support?",
   "faq_4_answer": "You can contact us via our Contact Us page or email us directly at hello@kriyato.com.",
   "faq_5_question": "Can I upgrade my plan later?",
-  "faq_5_answer": "Absolutely! You can upgrade from Free to Basic or Premium anytime to access more features."
+  "faq_5_answer": "Absolutely! You can upgrade from Free to Basic or Premium anytime to access more features.",
+  "day":"Day",
+  "month":"Month",
+  "user":"User",
+  "year":"Year"
 }

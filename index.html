@@ -42,20 +42,30 @@
     <link rel="icon" type="image/png" href="/assets/logos/logo3.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
     />
     <!-- Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <style>
-    body h1,h2,h3,h4,h5,h6 {
-        font-family: "Space Grotesk", sans-serif;
+    body h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Space Grotesk", sans-serif;
     }
-    body span,p,a{
-        font-family: "Inter", sans-serif;
+    body span,
+    p,
+    a {
+      font-family: "Inter", sans-serif;
     }
     html {
       scroll-behavior: smooth;
@@ -404,7 +414,7 @@
       id="about"
       class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
     >
-    <!-- Decorative Background -->
+      <!-- Decorative Background -->
       <svg
         class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] opacity-10 pointer-events-none"
         xmlns="http://www.w3.org/2000/svg"
@@ -965,7 +975,7 @@
         </div>
 
         <!-- Pricing Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Free Plan -->
           <div
             class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
@@ -981,24 +991,44 @@
               </h3>
               <span
                 class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
-                >30 Days</span
+                data-i18n="plan_free_duration"
               >
+                30 Days
+              </span>
             </div>
-            <p class="text-3xl font-bold text-gray-900 mb-4">₹0</p>
-            <div
-              class="text-sm opacity-80 mb-6"
-              data-i18n="plan_free_desc"
-            ></div>
+            <p
+              class="text-3xl font-bold text-gray-900 mb-4"
+              data-i18n="plan_free_price"
+            >
+              ₹0
+            </p>
+
+            <div class="text-sm opacity-90 mb-6" data-i18n="plan_free_desc">
+              <p class="text-gray-600 mb-4">Try the core experience</p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✅ Access for 30 days</li>
+                <li>✅ Limited features to explore the platform</li>
+                <li>✅ Perfect for testing and learning</li>
+                <li>
+                  ✅ Core modules: Dashboard, Inventory, Category, Product,
+                  Orders, Contacts
+                </li>
+                <li>✅ Learning Center: Updates, Guides, Tutorials</li>
+                <li>❌ No advanced CRM (Groups, Tags, Custom Fields)</li>
+                <li>❌ No stock reports, loans, or team management</li>
+              </ul>
+            </div>
 
             <a
               href="#"
               class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
+              data-i18n="plan_free_button"
             >
               Start Free
             </a>
           </div>
 
-          <!-- Basic Plan -->
+          <!-- Pro Plan -->
           <div
             class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
             data-aos="fade-up"
@@ -1007,75 +1037,64 @@
             <div class="flex justify-between items-center mb-4">
               <h3
                 class="text-xl font-semibold text-teal-700"
-                data-i18n="plan_basic"
+                data-i18n="plan_pro"
               >
-                Basic
+                Pro
               </h3>
               <span
                 class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
-                >365 Days</span
+                data-i18n="plan_pro_duration"
               >
+                365 Days
+              </span>
             </div>
-            <p class="text-3xl font-bold text-gray-900 mb-2">
-              ₹5,999
-              <span class="line-through text-gray-400 text-lg font-medium ml-2"
-                >₹9,999</span
+            <p
+              class="text-3xl font-bold text-gray-900 mb-2"
+              data-i18n="plan_pro_price"
+            >
+              ₹4,999
+              <span
+                class="line-through text-gray-400 text-lg font-medium ml-2"
+                data-i18n="plan_pro_old_price"
+                >₹6,999</span
               >
             </p>
             <p
               class="text-sm text-green-600 font-semibold mb-4"
-              data-i18n="plan_basic_saving"
-            ></p>
-            <div
-              class="text-sm opacity-80 mb-6"
-              data-i18n="plan_basic_desc"
-            ></div>
+              data-i18n="plan_pro_saving"
+            >
+              Save ₹2,000
+            </p>
+
+            <div class="text-sm opacity-90 mb-6" data-i18n="plan_pro_desc">
+              <p class="text-gray-600 mb-4">
+                Everything you need to run & grow
+              </p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✅ Full access — all features & modules</li>
+                <li>
+                  ✅ Dashboard analytics, Inventory, Category, Product (custom
+                  fields, batches, stock logs), Service
+                </li>
+                <li>
+                  ✅ Orders & Billing: Order Management, Orders, Create Order,
+                  Invoices
+                </li>
+                <li>✅ CRM+: Contacts with Groups, Tags & Custom Fields</li>
+                <li>
+                  ✅ Finance: Customer Ledger, Expenses, Loans, Stock Report
+                </li>
+                <li>✅ Admin: Manage, Team, Suppliers</li>
+                <li>✅ Learning Center: Updates, Guides, Tutorials</li>
+              </ul>
+            </div>
+
             <a
               href="#"
               class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
+              data-i18n="plan_pro_button"
             >
               Get Started
-            </a>
-          </div>
-
-          <!-- Premium Plan -->
-          <div
-            class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="flex justify-between items-center mb-4">
-              <h3
-                class="text-xl font-semibold text-teal-700"
-                data-i18n="plan_premium"
-              >
-                Premium
-              </h3>
-              <span
-                class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
-                >365 Days</span
-              >
-            </div>
-            <p class="text-3xl font-bold text-gray-900 mb-2">
-              ₹14,999
-              <span class="line-through text-gray-400 text-lg font-medium ml-2"
-                >₹19,999</span
-              >
-            </p>
-            <p
-              class="text-sm text-green-600 font-semibold mb-4"
-              data-i18n="plan_premium_saving"
-            ></p>
-
-            <div
-              class="text-sm opacity-80 mb-6"
-              data-i18n="plan_premium_desc"
-            ></div>
-            <a
-              href="#"
-              class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
-            >
-              Go Premium
             </a>
           </div>
         </div>
@@ -1141,6 +1160,7 @@
             >
             <input
               type="text"
+              name="contactName"
               id="contactName"
               required
               class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
@@ -1155,6 +1175,7 @@
             >
             <input
               type="email"
+              name="email"
               id="contactEmail"
               required
               class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
@@ -1170,6 +1191,7 @@
             <input
               type="phone"
               id="contactPhone"
+              name="phoneNumber"
               required
               class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
             />
@@ -1184,6 +1206,7 @@
             <textarea
               id="contactMessage"
               required
+              name="message"
               rows="5"
               class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500"
             ></textarea>
@@ -1468,7 +1491,9 @@
       </div>
     </section>
     <!-- Footer Section -->
-    <footer class="bg-gradient-to-br from-teal-900 via-cyan-900 to-teal-900 text-white relative pt-4">
+    <footer
+      class="bg-gradient-to-br from-teal-900 via-cyan-900 to-teal-900 text-white relative pt-4"
+    >
       <div class="container mx-auto px-6 lg:px-20">
         <!-- Footer Top: Contact & Social -->
         <div class="grid md:grid-cols-3 gap-8 items-start">
