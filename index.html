@@ -47,9 +47,9 @@
     />
     <!-- Font Awesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -171,42 +171,19 @@
 
             <!-- Desktop Menu -->
             <div class="hidden sm:flex space-x-8 text-lg font-medium">
-              <a
-                href="#"
-                class="hover:text-white transition"
-                data-i18n="nav_home"
-                >Home</a
-              >
-              <a
-                href="#about"
-                class="hover:text-white transition"
-                data-i18n="nav_about"
-                >About</a
-              >
-              <a
-                href="#services"
-                class="hover:text-white transition"
-                data-i18n="nav_services"
+              <a href="#" class="hover:text-white transition">Home</a>
+              <a href="#about" class="hover:text-white transition">About</a>
+              <a href="#services" class="hover:text-white transition"
                 >Services</a
               >
-              <a
-                href="#pricing"
-                class="hover:text-white transition"
-                data-i18n="nav_pricing"
-                >Pricing</a
+              <!-- <a href="#portfolio" class="hover:text-white transition"
+                >Portfolio</a
+              > -->
+              <a href="#pricing" class="hover:text-white transition"
+                >Plans & Pricing</a
               >
-              <a
-                href="#contact"
-                class="hover:text-white transition"
-                data-i18n="nav_contact"
-                >Contact Us</a
-              >
-              <a
-                href="#faq"
-                class="hover:text-white transition"
-                data-i18n="nav_faq"
-                >FAQ</a
-              >
+              <a href="#contact" class="hover:text-white transition">Contact</a>
+              <a href="#hire" class="hover:text-white transition">Hire Us</a>
             </div>
           </div>
 
@@ -215,39 +192,17 @@
             id="mobileMenu"
             class="hidden sm:hidden flex flex-col space-y-4 pb-4"
           >
-            <a href="#" class="hover:text-white transition" data-i18n="nav_home"
-              >Home</a
+            <a href="#" class="hover:text-white transition">Home</a>
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#services" class="hover:text-white transition">Services</a>
+            <!-- <a href="#portfolio" class="hover:text-white transition"
+              >Portfolio</a
+            > -->
+            <a href="#pricing" class="hover:text-white transition"
+              >Plans & Pricing</a
             >
-            <a
-              href="#about"
-              class="hover:text-white transition"
-              data-i18n="nav_about"
-              >About</a
-            >
-            <a
-              href="#services"
-              class="hover:text-white transition"
-              data-i18n="nav_services"
-              >Services</a
-            >
-            <a
-              href="#pricing"
-              class="hover:text-white transition"
-              data-i18n="nav_pricing"
-              >Pricing</a
-            >
-            <a
-              href="#contact"
-              class="hover:text-white transition"
-              data-i18n="nav_contact"
-              >Contact Us</a
-            >
-            <a
-              href="#faq"
-              class="hover:text-white transition"
-              data-i18n="nav_faq"
-              >FAQ</a
-            >
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+            <a href="#hire" class="hover:text-white transition">Hire Us</a>
           </div>
         </nav>
       </header>
@@ -280,128 +235,107 @@
         <circle cx="1200" cy="500" r="16" fill="#06B6D4" opacity="0.15" />
       </svg>
 
+      <!-- Hero Section -->
       <div
-        class="max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 flex flex-col gap-12 items-center relative z-10"
+        class="max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 flex flex-col gap-16 items-center relative z-10"
       >
         <!-- Left: Text -->
         <div
-          class="space-y-6"
+          class="space-y-6 text-center lg:text-left max-w-3xl"
           data-aos="fade-right"
-          data-aos-anchor-placement="top-bottom"
         >
           <h1
             class="text-5xl sm:text-6xl font-extrabold leading-tight text-white"
-            data-i18n="heading"
           >
-            <!-- translation -->
+            Empower Your Business with<br />
+            <span class="text-teal-400">All-in-One Digital Solutions</span>
           </h1>
 
-          <p
-            class="text-lg sm:text-xl opacity-90 text-teal-100"
-            data-i18n="subheading"
-          >
-            <!-- translation -->
+          <p class="text-lg sm:text-xl opacity-90 text-teal-100">
+            From websites, apps, and marketing to automation and growth — we
+            deliver everything you need to launch, grow, and scale your business
+            in the digital era.
           </p>
 
           <!-- Slogan -->
-          <div
-            class="pt-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <h2
-              class="text-3xl font-bold text-teal-400"
-              data-i18n="sloganTitle"
-            >
-              <!-- translation -->
+          <div class="pt-4">
+            <h2 class="text-3xl font-bold text-teal-400">
+              One Platform. Unlimited Possibilities.
             </h2>
-            <p class="mt-2 italic text-white" data-i18n="slogan">
-              <!-- translation -->
+            <p class="mt-2 italic text-white">
+              Your digital journey starts here — design, develop, market, and
+              manage it all in one place.
             </p>
           </div>
 
-          <!-- Buttons -->
+          <!-- CTA Buttons -->
           <div
-            class="flex gap-4 pt-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400"
+            class="flex flex-wrap justify-center lg:justify-start gap-4 pt-6"
           >
             <a
               href="https://business.kriyato.com/"
               target="_blank"
-              class="px-6 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-white font-semibold shadow-lg transition transform hover:scale-105"
-              data-i18n="startBtn"
-            ></a>
+              class="px-8 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-white font-semibold shadow-lg transition transform hover:scale-105"
+            >
+              Get Started
+            </a>
 
             <a
               href="#about"
-              class="px-6 py-3 rounded-xl border border-teal-300 hover:bg-teal-800/10 text-white font-semibold transition transform hover:scale-105"
-              data-i18n="learnBtn"
-            ></a>
+              class="px-8 py-3 rounded-xl border border-teal-300 hover:bg-teal-800/10 text-white font-semibold transition transform hover:scale-105"
+            >
+              Learn More
+            </a>
           </div>
         </div>
 
-        <!-- Right: Collage Style Overlapping Dashboard Images -->
+        <!-- Right: Collage of Dashboards -->
         <div
           class="relative max-w-6xl mx-auto flex justify-center items-center px-4"
+          data-aos="zoom-in"
         >
-          <div class="relative w-full h-[450px] md:h-[600px]">
+          <div class="relative w-full h-[500px] md:h-[600px]">
             <!-- Image 1 -->
             <div
               class="absolute top-4 md:top-0 -left-6 md:-left-10 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-teal-400 via-teal-500 to-cyan-600 rounded-2xl shadow-2xl overflow-hidden"
-              data-aos="zoom-in-up"
-              data-aos-duration="1200"
-              data-aos-delay="200"
             >
               <img
                 src="/assets/images/site1.png"
-                alt="Dashboard Preview"
-                class="w-full h-full object-cover rounded-2xl shadow-lg transform scale-100 transition-transform duration-700 hover:scale-110"
+                alt="Business Dashboard"
+                class="w-full h-full object-cover rounded-2xl shadow-lg transform transition-transform duration-700 hover:scale-110"
               />
             </div>
 
             <!-- Image 2 -->
             <div
               class="absolute top-32 md:top-28 -right-2 md:right-0 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-cyan-600 via-teal-500 to-teal-700 rounded-2xl shadow-2xl overflow-hidden"
-              data-aos="fade-left"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="1200"
-              data-aos-delay="400"
             >
               <img
                 src="/assets/images/site2.png"
-                alt="Supplier Details"
-                class="w-full h-full object-cover rounded-2xl shadow-lg scale-100 transform transition-transform duration-700 hover:scale-110"
+                alt="Client Management Portal"
+                class="w-full h-full object-cover rounded-2xl shadow-lg transform transition-transform duration-700 hover:scale-110"
               />
             </div>
 
             <!-- Image 3 -->
             <div
               class="absolute bottom-28 md:bottom-20 -left-6 md:-left-10 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-teal-600 via-teal-500 to-cyan-500 rounded-2xl shadow-2xl overflow-hidden"
-              data-aos="flip-up"
-              data-aos-duration="1200"
-              data-aos-delay="600"
             >
               <img
                 src="/assets/images/site3.png"
-                alt="Loan Details"
-                class="w-full h-full object-cover rounded-2xl shadow-lg scale-100 transform transition-transform duration-700 hover:scale-110"
+                alt="Marketing Analytics"
+                class="w-full h-full object-cover rounded-2xl shadow-lg transform transition-transform duration-700 hover:scale-110"
               />
             </div>
 
             <!-- Image 4 -->
             <div
               class="absolute bottom-2 md:bottom-0 -right-2 md:-right-10 w-48 h-40 md:w-[30rem] md:h-[18rem] p-[3px] bg-gradient-to-br from-cyan-500 via-teal-500 to-teal-800 rounded-2xl shadow-2xl overflow-hidden"
-              data-aos="zoom-out-up"
-              data-aos-duration="1200"
-              data-aos-delay="800"
             >
               <img
                 src="/assets/images/site4.png"
-                alt="Product Details"
-                class="w-full h-full object-cover rounded-2xl shadow-lg scale-100 transform transition-transform duration-700 hover:scale-110"
+                alt="E-commerce Solutions"
+                class="w-full h-full object-cover rounded-2xl shadow-lg transform transition-transform duration-700 hover:scale-110"
               />
             </div>
           </div>
@@ -460,49 +394,49 @@
         ></div>
       </div>
       <div class="container mx-auto px-6 lg:px-20 relative z-10">
-        <!-- Heading -->
         <!-- Section Heading -->
         <div class="text-center mb-20" data-aos="fade-up">
-          <h1
-            class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4"
-            data-i18n="about_heading"
-          >
+          <h1 class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4">
             About Kriyato
           </h1>
           <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
-          <p
-            class="mt-2 text-lg opacity-80 max-w-2xl mx-auto"
-            data-i18n="about_subheading"
-          ></p>
+          <p class="mt-2 text-lg opacity-80 max-w-2xl mx-auto">
+            Kriyato is a next-generation IT and digital solutions company
+            dedicated to helping businesses thrive online. We bring technology,
+            creativity, and strategy together — empowering entrepreneurs,
+            startups, and enterprises to launch, grow, and scale with ease.
+          </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <!-- Left: About Content -->
           <div class="space-y-6" data-aos="fade-right">
-            <h3
-              class="text-2xl md:text-3xl font-bold text-teal-600"
-              data-i18n="about_subtitle"
-            >
-              Empowering Small Businesses, Driving Digital Growth
+            <h3 class="text-2xl md:text-3xl font-bold text-teal-600">
+              Transforming Ideas into Digital Success Stories
             </h3>
-            <p
-              class="text-lg opacity-80 leading-relaxed"
-              data-i18n="about_description"
-            ></p>
-            <!-- Optional CTA -->
+            <p class="text-lg opacity-80 leading-relaxed">
+              At Kriyato, we believe that every business — no matter its size —
+              deserves a strong digital presence. Our mission is to simplify
+              technology and marketing so that you can focus on what matters
+              most: growing your business.
+            </p>
+            <p class="text-lg opacity-80 leading-relaxed">
+              From website & app development to marketing automation, branding,
+              and e-commerce solutions, we provide everything under one roof —
+              so you don’t have to juggle multiple vendors or platforms.
+            </p>
             <a
               href="https://business.kriyato.com/"
               target="_blank"
               class="inline-block mt-4 px-6 py-3 bg-teal-500 hover:bg-teal-400 text-white rounded-xl font-semibold shadow-lg transition"
-              data-aos="fade-up"
-              data-aos-delay="200"
             >
-              Get Started
+              Get Started Today
             </a>
           </div>
 
           <!-- Right: Vision, Mission, Values -->
           <div class="grid gap-6">
+            <!-- Vision -->
             <div
               class="flex items-start p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
               data-aos="fade-left"
@@ -514,20 +448,16 @@
                 class="w-12 h-12 mr-4"
               />
               <div>
-                <h4
-                  class="text-xl font-semibold text-teal-600"
-                  data-i18n="vision_title"
-                >
-                  Our Vision
-                </h4>
-                <p class="opacity-80 mt-2" data-i18n="vision_text">
-                  To create a sustainable digital ecosystem where small
-                  businesses thrive, connect, and compete fairly in a
-                  fast-changing marketplace.
+                <h4 class="text-xl font-semibold text-teal-600">Our Vision</h4>
+                <p class="opacity-80 mt-2">
+                  To build a future where businesses of all sizes leverage
+                  digital tools to compete, grow, and succeed — without
+                  complexity or high costs.
                 </p>
               </div>
             </div>
 
+            <!-- Mission -->
             <div
               class="flex items-start p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
               data-aos="fade-left"
@@ -539,20 +469,16 @@
                 class="w-12 h-12 mr-4"
               />
               <div>
-                <h4
-                  class="text-xl font-semibold text-teal-600"
-                  data-i18n="mission_title"
-                >
-                  Our Mission
-                </h4>
-                <p class="opacity-80 mt-2" data-i18n="mission_text">
-                  To provide affordable, accessible, and scalable digital
-                  solutions that simplify business management, enhance
-                  visibility, and enable growth for every entrepreneur.
+                <h4 class="text-xl font-semibold text-teal-600">Our Mission</h4>
+                <p class="opacity-80 mt-2">
+                  To deliver accessible, scalable, and impactful digital
+                  solutions that fuel growth, boost visibility, and simplify
+                  business management.
                 </p>
               </div>
             </div>
 
+            <!-- Values -->
             <div
               class="flex items-start p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
               data-aos="fade-left"
@@ -564,23 +490,19 @@
                 class="w-12 h-12 mr-4"
               />
               <div>
-                <h4
-                  class="text-xl font-semibold text-teal-600"
-                  data-i18n="values_title"
-                >
-                  Our Values
-                </h4>
+                <h4 class="text-xl font-semibold text-teal-600">Our Values</h4>
                 <ul class="list-disc list-inside opacity-80 space-y-2 mt-2">
-                  <li data-i18n="values_1">Innovation with purpose</li>
-                  <li data-i18n="values_2">Transparency and trust</li>
-                  <li data-i18n="values_3">Customer-first approach</li>
-                  <li data-i18n="values_4">Empowering communities</li>
+                  <li>Innovation with purpose</li>
+                  <li>Transparency and trust</li>
+                  <li>Customer-first approach</li>
+                  <li>Empowering businesses & communities</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- Enhanced Decorative Background Illustration -->
+
+        <!-- Decorative Animated Background -->
         <svg
           class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1200px] h-[600px] opacity-20 pointer-events-none"
           xmlns="http://www.w3.org/2000/svg"
@@ -609,7 +531,6 @@
             </linearGradient>
           </defs>
 
-          <!-- Blobs -->
           <path
             d="M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z"
             fill="url(#grad1)"
@@ -619,10 +540,10 @@
               dur="20s"
               repeatCount="indefinite"
               values="
-        M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z;
-        M260,130 C410,-10 860,10 960,130 C1060,250 1160,410 960,510 C760,610 410,510 260,410 C160,310 110,210 260,130 Z;
-        M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z
-      "
+          M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z;
+          M260,130 C410,-10 860,10 960,130 C1060,250 1160,410 960,510 C760,610 410,510 260,410 C160,310 110,210 260,130 Z;
+          M250,120 C400,-20 850,0 950,120 C1050,240 1150,400 950,500 C750,600 400,500 250,400 C150,300 100,200 250,120 Z
+        "
             />
           </path>
           <path
@@ -634,46 +555,12 @@
               dur="25s"
               repeatCount="indefinite"
               values="
-        M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z;
-        M90,410 C210,360 510,560 660,410 C810,260 1060,310 1160,460 C1110,560 710,510 510,460 C310,410 60,460 90,410 Z;
-        M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z
-      "
+          M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z;
+          M90,410 C210,360 510,560 660,410 C810,260 1060,310 1160,460 C1110,560 710,510 510,460 C310,410 60,460 90,410 Z;
+          M100,400 C200,350 500,550 650,400 C800,250 1050,300 1150,450 C1100,550 700,500 500,450 C300,400 50,450 100,400 Z
+        "
             />
           </path>
-
-          <!-- Floating nodes / circles -->
-          <circle cx="200" cy="150" r="8" fill="#14B8A6" opacity="0.15">
-            <animate
-              attributeName="cy"
-              dur="6s"
-              values="150;160;150"
-              repeatCount="indefinite"
-            />
-          </circle>
-          <circle cx="500" cy="300" r="12" fill="#06B6D4" opacity="0.15">
-            <animate
-              attributeName="cy"
-              dur="8s"
-              values="300;310;300"
-              repeatCount="indefinite"
-            />
-          </circle>
-          <circle cx="800" cy="200" r="10" fill="#14B8A6" opacity="0.1">
-            <animate
-              attributeName="cy"
-              dur="10s"
-              values="200;190;200"
-              repeatCount="indefinite"
-            />
-          </circle>
-          <circle cx="1000" cy="400" r="6" fill="#06B6D4" opacity="0.15">
-            <animate
-              attributeName="cy"
-              dur="7s"
-              values="400;390;400"
-              repeatCount="indefinite"
-            />
-          </circle>
         </svg>
       </div>
     </section>
@@ -713,60 +600,44 @@
       <div class="container mx-auto px-6 lg:px-20 relative z-10">
         <!-- Section Heading -->
         <div class="text-center mb-20" data-aos="fade-up">
-          <h1
-            class="text-4xl md:text-5xl font-extrabold text-white mb-4"
-            data-i18n="services_heading"
-          >
+          <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
             Our Services
           </h1>
           <div class="w-24 h-1 bg-white mx-auto rounded-full mb-4"></div>
-          <p
-            class="mt-2 text-white text-lg opacity-80 max-w-2xl mx-auto"
-            data-i18n="services_subheading"
-          >
-            We provide powerful digital solutions to help small and micro
-            businesses grow online and manage operations efficiently.
+          <p class="mt-2 text-white text-lg opacity-80 max-w-2xl mx-auto">
+            We deliver powerful digital solutions to help small and medium
+            businesses grow online, streamline operations, and scale faster.
           </p>
         </div>
 
         <!-- Services Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <!-- Service Card Template -->
+          <!-- SaaS ERP -->
           <div
             class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <!-- Icon Blob Background -->
             <div
               class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-tr from-teal-400 to-cyan-300 rounded-full opacity-30 animate-pulse pointer-events-none"
             ></div>
-
-            <!-- PNG Icon -->
             <div class="w-16 h-16 mb-4">
               <img
                 src="/assets/images/service-erp.png"
-                alt="ERP Icon"
+                alt="ERP Solutions"
                 class="w-full h-full object-contain"
               />
             </div>
-
-            <!-- Service Title -->
-            <h3
-              class="text-xl text-teal-600 font-semibold mb-2"
-              data-i18n="service_erp"
-            >
+            <h3 class="text-xl text-teal-600 font-semibold mb-2">
               SaaS ERP Solutions
             </h3>
-
-            <!-- Service Description -->
-            <p class="opacity-80 text-sm" data-i18n="service_erp_desc">
-              End-to-end business management platform offering Billing,
-              Inventory, Customer Profiles, and Dashboards—all in one unified
-              ERP system.
+            <p class="opacity-80 text-sm">
+              A complete business management platform for billing, inventory,
+              customers, orders, and dashboards — all in one ERP system.
             </p>
           </div>
 
+          <!-- Auto Website Builder -->
           <div
             class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
             data-aos="fade-up"
@@ -778,22 +649,20 @@
             <div class="w-16 h-16 mb-4">
               <img
                 src="/assets/images/service-website.png"
-                alt="Website Icon"
+                alt="Auto Website Builder"
                 class="w-full h-full object-contain"
               />
             </div>
-            <h3
-              class="text-xl text-teal-600 font-semibold mb-2"
-              data-i18n="service_website"
-            >
+            <h3 class="text-xl text-teal-600 font-semibold mb-2">
               Auto Website Builder
             </h3>
-            <p class="opacity-80 text-sm" data-i18n="service_website_desc">
-              Instantly create professional websites using your product/service
-              data. No coding required.
+            <p class="opacity-80 text-sm">
+              Instantly generate professional websites from your existing
+              product or service data — no coding skills required.
             </p>
           </div>
 
+          <!-- Marketing Tools -->
           <div
             class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
             data-aos="fade-up"
@@ -805,22 +674,20 @@
             <div class="w-16 h-16 mb-4">
               <img
                 src="/assets/images/service-marketing.png"
-                alt="Marketing Icon"
+                alt="Marketing Tools"
                 class="w-full h-full object-contain"
               />
             </div>
-            <h3
-              class="text-xl text-teal-600 font-semibold mb-2"
-              data-i18n="service_marketing"
-            >
+            <h3 class="text-xl text-teal-600 font-semibold mb-2">
               Marketing & Campaigns
             </h3>
-            <p class="opacity-80 text-sm" data-i18n="service_marketing_desc">
-              Integrated marketing tools for email, SMS, and WhatsApp campaigns.
-              Track conversions and grow your brand.
+            <p class="opacity-80 text-sm">
+              Launch email, SMS, and WhatsApp campaigns, track conversions, and
+              grow your brand with integrated marketing tools.
             </p>
           </div>
 
+          <!-- Website Development -->
           <div
             class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
             data-aos="fade-up"
@@ -832,22 +699,20 @@
             <div class="w-16 h-16 mb-4">
               <img
                 src="/assets/images/service-webdev.png"
-                alt="Web Dev Icon"
+                alt="Website Development"
                 class="w-full h-full object-contain"
               />
             </div>
-            <h3
-              class="text-xl text-teal-600 font-semibold mb-2"
-              data-i18n="service_webdev"
-            >
+            <h3 class="text-xl text-teal-600 font-semibold mb-2">
               Website Development
             </h3>
-            <p class="opacity-80 text-sm" data-i18n="service_webdev_desc">
-              Custom, responsive websites optimized for speed, security, and all
-              devices.
+            <p class="opacity-80 text-sm">
+              Fully customized, responsive, and SEO-optimized websites designed
+              for performance, security, and scalability.
             </p>
           </div>
 
+          <!-- Mobile App Development -->
           <div
             class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
             data-aos="fade-up"
@@ -859,22 +724,20 @@
             <div class="w-16 h-16 mb-4">
               <img
                 src="/assets/images/service-appdev.png"
-                alt="Mobile Icon"
+                alt="Mobile App Development"
                 class="w-full h-full object-contain"
               />
             </div>
-            <h3
-              class="text-xl text-teal-600 font-semibold mb-2"
-              data-i18n="service_mobile"
-            >
+            <h3 class="text-xl text-teal-600 font-semibold mb-2">
               Mobile App Development
             </h3>
-            <p class="opacity-80 text-sm" data-i18n="service_mobile_desc">
-              Build scalable mobile apps for Android and iOS with native and
-              hybrid frameworks.
+            <p class="opacity-80 text-sm">
+              We build scalable Android and iOS apps using both native and
+              hybrid technologies, tailored to your business goals.
             </p>
           </div>
 
+          <!-- CRM Solutions -->
           <div
             class="p-6 bg-white rounded-3xl shadow-lg hover:shadow-2xl transform transition duration-500 hover:scale-105 relative overflow-hidden"
             data-aos="fade-up"
@@ -886,24 +749,22 @@
             <div class="w-16 h-16 mb-4">
               <img
                 src="/assets/images/service-crm.png"
-                alt="CRM Icon"
+                alt="CRM Solutions"
                 class="w-full h-full object-contain"
               />
             </div>
-            <h3
-              class="text-xl text-teal-600 font-semibold mb-2"
-              data-i18n="service_crm"
-            >
+            <h3 class="text-xl text-teal-600 font-semibold mb-2">
               CRM Solutions
             </h3>
-            <p class="opacity-80 text-sm" data-i18n="service_crm_desc">
-              Manage customer relationships effectively with lead tracking,
-              follow-ups, and automated workflows to boost sales and retention.
+            <p class="opacity-80 text-sm">
+              Automate lead tracking, follow-ups, and customer workflows to
+              increase conversions, boost sales, and improve retention.
             </p>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Pricing Section -->
     <section
       id="pricing"
@@ -956,149 +817,222 @@
       </div>
 
       <div class="container mx-auto px-6 lg:px-20 relative">
-        <!-- Section Heading -->
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h1
-            class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4"
-            data-i18n="pricing_heading"
-          >
-            Our Pricing Plans
-          </h1>
-          <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
-          <p
-            class="mt-2 text-lg opacity-80 max-w-2xl mx-auto"
-            data-i18n="pricing_subheading"
-          >
-            Affordable plans for small businesses and startups. Choose a plan
-            that fits your growth.
-          </p>
-        </div>
+  <!-- Section Heading -->
+  <div class="text-center mb-16" data-aos="fade-up">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4">
+      Our Pricing Plans
+    </h1>
+    <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
+    <p class="mt-2 text-lg opacity-80 max-w-2xl mx-auto">
+      Choose the right plan for your business: SaaS App or Digital Services.
+    </p>
+  </div>
 
-        <!-- Pricing Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Free Plan -->
-          <div
-            class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="flex justify-between items-center mb-4">
-              <h3
-                class="text-xl font-semibold text-teal-600"
-                data-i18n="plan_free"
-              >
-                Free
-              </h3>
-              <span
-                class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
-                data-i18n="plan_free_duration"
-              >
-                30 Days
-              </span>
-            </div>
-            <p
-              class="text-3xl font-bold text-gray-900 mb-4"
-              data-i18n="plan_free_price"
-            >
-              ₹0
-            </p>
+  <!-- Toggle Buttons -->
+  <div class="flex justify-center mb-6" data-aos="fade-up" data-aos-delay="50">
+    <button id="toggle-india" class="px-6 py-2 rounded-l-xl bg-teal-800 text-white font-semibold hover:bg-teal-700 transition">
+      India
+    </button>
+    <button id="toggle-international" class="px-6 py-2 rounded-r-xl bg-gray-200 text-teal-800 font-semibold hover:bg-gray-300 transition">
+      International
+    </button>
+  </div>
 
-            <div class="text-sm opacity-90 mb-6" data-i18n="plan_free_desc">
-              <p class="text-gray-600 mb-4">Try the core experience</p>
-              <ul class="space-y-2 text-sm text-gray-700">
-                <li>✅ Access for 30 days</li>
-                <li>✅ Limited features to explore the platform</li>
-                <li>✅ Perfect for testing and learning</li>
-                <li>
-                  ✅ Core modules: Dashboard, Inventory, Category, Product,
-                  Orders, Contacts
-                </li>
-                <li>✅ Learning Center: Updates, Guides, Tutorials</li>
-                <li>❌ No advanced CRM (Groups, Tags, Custom Fields)</li>
-                <li>❌ No stock reports, loans, or team management</li>
-              </ul>
-            </div>
+  <!-- Toggle Plans: SaaS / Digital Services -->
+  <div class="flex justify-center mb-12" data-aos="fade-up" data-aos-delay="50">
+    <button id="toggle-saas" class="px-6 py-2 rounded-l-xl bg-teal-800 text-white font-semibold hover:bg-teal-700 transition">
+      SaaS App
+    </button>
+    <button id="toggle-service" class="px-6 py-2 rounded-r-xl bg-gray-200 text-teal-800 font-semibold hover:bg-gray-300 transition">
+      Digital Services
+    </button>
+  </div>
 
-            <a
-              href="#"
-              class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
-              data-i18n="plan_free_button"
-            >
-              Start Free
-            </a>
-          </div>
-
-          <!-- Pro Plan -->
-          <div
-            class="p-8 flex flex-col justify-between bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="flex justify-between items-center mb-4">
-              <h3
-                class="text-xl font-semibold text-teal-700"
-                data-i18n="plan_pro"
-              >
-                Pro
-              </h3>
-              <span
-                class="bg-teal-100 text-teal-800 text-sm px-2 py-1 rounded-full"
-                data-i18n="plan_pro_duration"
-              >
-                365 Days
-              </span>
-            </div>
-            <p
-              class="text-3xl font-bold text-gray-900 mb-2"
-              data-i18n="plan_pro_price"
-            >
-              ₹4,999
-              <span
-                class="line-through text-gray-400 text-lg font-medium ml-2"
-                data-i18n="plan_pro_old_price"
-                >₹6,999</span
-              >
-            </p>
-            <p
-              class="text-sm text-green-600 font-semibold mb-4"
-              data-i18n="plan_pro_saving"
-            >
-              Save ₹2,000
-            </p>
-
-            <div class="text-sm opacity-90 mb-6" data-i18n="plan_pro_desc">
-              <p class="text-gray-600 mb-4">
-                Everything you need to run & grow
-              </p>
-              <ul class="space-y-2 text-sm text-gray-700">
-                <li>✅ Full access — all features & modules</li>
-                <li>
-                  ✅ Dashboard analytics, Inventory, Category, Product (custom
-                  fields, batches, stock logs), Service
-                </li>
-                <li>
-                  ✅ Orders & Billing: Order Management, Orders, Create Order,
-                  Invoices
-                </li>
-                <li>✅ CRM+: Contacts with Groups, Tags & Custom Fields</li>
-                <li>
-                  ✅ Finance: Customer Ledger, Expenses, Loans, Stock Report
-                </li>
-                <li>✅ Admin: Manage, Team, Suppliers</li>
-                <li>✅ Learning Center: Updates, Guides, Tutorials</li>
-              </ul>
-            </div>
-
-            <a
-              href="#"
-              class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition"
-              data-i18n="plan_pro_button"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
+  <!-- Pricing Cards Wrapper -->
+  <div id="pricing-wrapper">
+    <!-- SaaS App Plans -->
+    <div id="saas-plans" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Free Plan -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">Free</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹0</span>
+          <span class="price-int hidden">$0</span>
+        </p>
+        <p class="text-sm opacity-80 mb-4">30-day access to core app features</p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Dashboard, Inventory, Orders</li>
+          <li>✅ Products & Services Management</li>
+          <li>✅ Basic CRM (Contacts only)</li>
+          <li>❌ Advanced CRM & Reports</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Start Free
+        </a>
       </div>
+
+      <!-- Pro Plan -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-teal-700 mb-2">Pro</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹4,999 / yr</span>
+          <span class="price-int hidden">$79 / yr</span>
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Full access — all features & modules</li>
+          <li>✅ Dashboard analytics, Inventory, Category, Product (custom fields, batches, stock logs), Service</li>
+          <li>✅ Orders & Billing: Order Management, Invoices</li>
+          <li>✅ CRM+: Contacts with Groups, Tags & Custom Fields</li>
+          <li>✅ Finance: Customer Ledger, Expenses, Loans, Stock Reports</li>
+          <li>✅ Admin: Team & Supplier Management</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Get Started
+        </a>
+      </div>
+    </div>
+
+    <!-- Digital Services Plans -->
+    <div id="service-plans" class="grid grid-cols-1 md:grid-cols-3 gap-8 hidden">
+      <!-- Website Plans -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">Landing Page</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹4,999</span>
+          <span class="price-int hidden">$99</span>
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Up to 5 pages</li>
+          <li>✅ Responsive & SEO-ready</li>
+          <li>✅ 1 month support</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Get Started
+        </a>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">Kriyato App + eCommerce</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹50,000+</span>
+          <span class="price-int hidden">$699+</span>
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Full eCommerce Website</li>
+          <li>✅ Includes 1 year Kriyato App subscription</li>
+          <li>✅ Responsive & SEO-ready</li>
+          <li>✅ 3 months support</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Get Started
+        </a>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">Custom Website</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹75,000+</span>
+          <span class="price-int hidden">$999+</span>
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Custom design & functionality</li>
+          <li>✅ Backend & API integration</li>
+          <li>✅ 6 months support</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Marketing Pro -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">Marketing Pro</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹4,999 / mo</span>
+          <span class="price-int hidden">$149 / mo</span>
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Digital Posts & Content Creation</li>
+          <li>✅ Email & Campaign Automation</li>
+          <li>✅ Lead Tracking & Analytics</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Get Started
+        </a>
+      </div>
+
+      <!-- App Development -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">App Development</h3>
+        <p class="text-3xl font-bold text-gray-900 mb-2">
+          <span class="price-inr">₹50,000+</span>
+          <span class="price-int hidden">$699+</span>
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>✅ Native/Hybrid App for iOS & Android</li>
+          <li>✅ Backend + Admin Panel</li>
+          <li>✅ Full Support & Deployment</li>
+        </ul>
+        <a href="#" class="block text-center px-6 py-3 bg-teal-800 text-white rounded-xl font-semibold hover:bg-teal-500 transition">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Currency Toggle
+  const indiaBtn = document.getElementById('toggle-india');
+  const intlBtn = document.getElementById('toggle-international');
+
+  indiaBtn.addEventListener('click', () => {
+    document.querySelectorAll('.price-inr').forEach(el => el.classList.remove('hidden'));
+    document.querySelectorAll('.price-int').forEach(el => el.classList.add('hidden'));
+
+    indiaBtn.classList.add('bg-teal-800', 'text-white');
+    indiaBtn.classList.remove('bg-gray-200', 'text-teal-800');
+    intlBtn.classList.remove('bg-teal-800', 'text-white');
+    intlBtn.classList.add('bg-gray-200', 'text-teal-800');
+  });
+
+  intlBtn.addEventListener('click', () => {
+    document.querySelectorAll('.price-inr').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.price-int').forEach(el => el.classList.remove('hidden'));
+
+    intlBtn.classList.add('bg-teal-800', 'text-white');
+    intlBtn.classList.remove('bg-gray-200', 'text-teal-800');
+    indiaBtn.classList.remove('bg-teal-800', 'text-white');
+    indiaBtn.classList.add('bg-gray-200', 'text-teal-800');
+  });
+
+  // SaaS / Service Toggle
+  const saasBtn = document.getElementById('toggle-saas');
+  const serviceBtn = document.getElementById('toggle-service');
+  const saasPlans = document.getElementById('saas-plans');
+  const servicePlans = document.getElementById('service-plans');
+
+  saasBtn.addEventListener('click', () => {
+    saasPlans.classList.remove('hidden');
+    servicePlans.classList.add('hidden');
+
+    saasBtn.classList.add('bg-teal-800', 'text-white');
+    saasBtn.classList.remove('bg-gray-200', 'text-teal-800');
+    serviceBtn.classList.remove('bg-teal-800', 'text-white');
+    serviceBtn.classList.add('bg-gray-200', 'text-teal-800');
+  });
+
+  serviceBtn.addEventListener('click', () => {
+    servicePlans.classList.remove('hidden');
+    saasPlans.classList.add('hidden');
+
+    serviceBtn.classList.add('bg-teal-800', 'text-white');
+    serviceBtn.classList.remove('bg-gray-200', 'text-teal-800');
+    saasBtn.classList.remove('bg-teal-800', 'text-white');
+    saasBtn.classList.add('bg-gray-200', 'text-teal-800');
+  });
+</script>
+
     </section>
 
     <!-- Contact Us Section -->
@@ -1281,213 +1215,103 @@
         ></div>
       </div>
 
-      <!-- FAQ Content -->
-      <div class="container mx-auto px-6 lg:px-20 relative">
-        <!-- Section Heading -->
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h1
-            class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4"
-            data-i18n="faq_heading"
-          >
-            Frequently Asked Questions
-          </h1>
-          <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
-          <p
-            class="mt-2 text-lg opacity-80 max-w-2xl mx-auto"
-            data-i18n="faq_subheading"
-          >
-            Here are answers to some common questions about Kriyato and our
-            services.
-          </p>
-        </div>
+      <!-- FAQ Section -->
+<div class="container mx-auto px-6 lg:px-20 py-16">
+  <!-- Section Heading -->
+  <div class="text-center mb-12" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-teal-900 mb-4">
+      Frequently Asked Questions
+    </h2>
+    <div class="w-24 h-1 bg-teal-800 mx-auto rounded-full mb-4"></div>
+    <p class="text-lg opacity-80 max-w-2xl mx-auto">
+      Find answers to common questions about Kriyato SaaS app and our digital services.
+    </p>
+  </div>
 
-        <!-- FAQ Accordion -->
-        <div class="space-y-4 max-w-3xl mx-auto">
-          <!-- FAQ Item 1 -->
-          <div
-            class="border border-gray-200 rounded-xl overflow-hidden"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <button
-              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
-            >
-              <span
-                class="font-semibold text-teal-700"
-                data-i18n="faq_1_question"
-                >What is Kriyato?</span
-              >
-              <svg
-                class="w-5 h-5 transition-transform duration-300 transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              class="px-6 py-4 bg-gray-50 hidden faq-content"
-              data-i18n="faq_1_answer"
-            >
-              Kriyato is an all-in-one SaaS platform that helps small and micro
-              businesses manage operations, reach customers, and grow digitally.
-            </div>
-          </div>
+  <!-- FAQ Accordion -->
+  <div class="space-y-4 max-w-3xl mx-auto">
+    <!-- FAQ Item 1 -->
+    <div class="border border-gray-200 rounded-xl overflow-hidden">
+      <button class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle">
+        <span class="font-semibold text-teal-700">What is Kriyato?</span>
+        <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="px-6 py-4 bg-gray-50 hidden faq-content">
+        Kriyato is an all-in-one SaaS platform and digital services provider that helps small and micro businesses manage operations, reach customers, and grow digitally.
+      </div>
+    </div>
 
-          <!-- FAQ Item 2 -->
-          <div
-            class="border border-gray-200 rounded-xl overflow-hidden"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <button
-              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
-            >
-              <span
-                class="font-semibold text-teal-700"
-                data-i18n="faq_2_question"
-                >Can I try Kriyato for free?</span
-              >
-              <svg
-                class="w-5 h-5 transition-transform duration-300 transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              class="px-6 py-4 bg-gray-50 hidden faq-content"
-              data-i18n="faq_2_answer"
-            >
-              Yes! We offer a free 30-day plan to explore basic features and see
-              how Kriyato works for your business.
-            </div>
-          </div>
+    <!-- FAQ Item 2 -->
+    <div class="border border-gray-200 rounded-xl overflow-hidden">
+      <button class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle">
+        <span class="font-semibold text-teal-700">Can I try Kriyato before buying?</span>
+        <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="px-6 py-4 bg-gray-50 hidden faq-content">
+        Yes! We offer a free 30-day trial for the SaaS app so you can explore basic features and decide which plan suits your business best.
+      </div>
+    </div>
 
-          <!-- FAQ Item 3 -->
-          <div
-            class="border border-gray-200 rounded-xl overflow-hidden"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <button
-              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
-            >
-              <span
-                class="font-semibold text-teal-700"
-                data-i18n="faq_3_question"
-                >Which services does Kriyato provide?</span
-              >
-              <svg
-                class="w-5 h-5 transition-transform duration-300 transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              class="px-6 py-4 bg-gray-50 hidden faq-content"
-              data-i18n="faq_3_answer"
-            >
-              We provide ERP solutions, CRM, website and mobile app development,
-              marketing tools, and more to help your business grow online.
-            </div>
-          </div>
+    <!-- FAQ Item 3 -->
+    <div class="border border-gray-200 rounded-xl overflow-hidden">
+      <button class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle">
+        <span class="font-semibold text-teal-700">What digital services does Kriyato offer?</span>
+        <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="px-6 py-4 bg-gray-50 hidden faq-content">
+        We provide website development (landing pages, eCommerce, custom websites), digital marketing (social posts, email campaigns, lead tracking), and mobile app development for Android and iOS.
+      </div>
+    </div>
 
-          <!-- FAQ Item 4 -->
-          <div
-            class="border border-gray-200 rounded-xl overflow-hidden"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <button
-              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
-            >
-              <span
-                class="font-semibold text-teal-700"
-                data-i18n="faq_4_question"
-                >How do I contact support?</span
-              >
-              <svg
-                class="w-5 h-5 transition-transform duration-300 transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              class="px-6 py-4 bg-gray-50 hidden faq-content"
-              data-i18n="faq_4_answer"
-            >
-              You can contact us via our Contact Us page or email us directly at
-              hello@kriyato.com.
-            </div>
-          </div>
+    <!-- FAQ Item 4 -->
+    <div class="border border-gray-200 rounded-xl overflow-hidden">
+      <button class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle">
+        <span class="font-semibold text-teal-700">Can I upgrade my plan later?</span>
+        <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="px-6 py-4 bg-gray-50 hidden faq-content">
+        Absolutely! You can upgrade from the Free plan to Pro anytime to access advanced features, additional services, or extended support.
+      </div>
+    </div>
 
-          <!-- FAQ Item 5 -->
-          <div
-            class="border border-gray-200 rounded-xl overflow-hidden"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <button
-              class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle"
-            >
-              <span
-                class="font-semibold text-teal-700"
-                data-i18n="faq_5_question"
-                >Can I upgrade my plan later?</span
-              >
-              <svg
-                class="w-5 h-5 transition-transform duration-300 transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              class="px-6 py-4 bg-gray-50 hidden faq-content"
-              data-i18n="faq_5_answer"
-            >
-              Absolutely! You can upgrade from Free to Basic or Premium anytime
-              to access more features.
-            </div>
-          </div>
-        </div>
+    <!-- FAQ Item 5 -->
+    <div class="border border-gray-200 rounded-xl overflow-hidden">
+      <button class="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 flex justify-between items-center focus:outline-none faq-toggle">
+        <span class="font-semibold text-teal-700">How can I contact Kriyato support?</span>
+        <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="px-6 py-4 bg-gray-50 hidden faq-content">
+        You can reach us via email at <a href="mailto:kriyato.it.solutions@gmail.com" class="text-teal-600 underline">kriyato.it.solutions@gmail</a> or through our Contact page. Our team responds quickly to queries and support requests.
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const toggles = document.querySelectorAll('.faq-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('svg');
+      if(content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    });
+  });
+</script>
       </div>
     </section>
     <!-- Footer Section -->
@@ -1536,7 +1360,7 @@
                   href="#pricing"
                   class="hover:text-teal-300 transition"
                   data-i18n="footer_pricing"
-                  >Pricing</a
+                  >Plans & Pricing</a
                 >
               </li>
               <li>
@@ -1564,13 +1388,14 @@
                 <i class="fab fa-whatsapp"></i>
               </a>
               <a
-                href="mailto:hello@kriyato.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kriyato.it.solutions@gmail.com"
+                target="_blank"
                 class="hover:text-yellow-400 transition text-2xl"
               >
                 <i class="fas fa-envelope"></i>
               </a>
               <a
-                href="https://instagram.com/kriyatoitsolutions"
+                href="https://instagram.com/kriyato.it.solutions"
                 target="_blank"
                 class="hover:text-pink-400 transition text-2xl"
               >
@@ -1597,13 +1422,6 @@
         </div>
       </div>
     </footer>
-    <!-- Floating Language Toggle -->
-    <button
-      id="langToggle"
-      class="fixed bottom-6 right-6 px-4 py-2 rounded-full shadow-lg bg-teal-500 text-white font-semibold hover:bg-teal-400 transition z-50"
-    >
-      हिन्दी
-    </button>
 
     <!-- Include AOS library for animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
